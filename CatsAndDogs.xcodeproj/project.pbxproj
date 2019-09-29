@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EEDF1883339294A2692080B /* Pods_CatsAndDogs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF40E9E7DFCC22C80C24F05 /* Pods_CatsAndDogs.framework */; };
 		D2ABC4E723411EF900E67B49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABC4E623411EF900E67B49 /* AppDelegate.swift */; };
 		D2ABC4E923411EF900E67B49 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABC4E823411EF900E67B49 /* SceneDelegate.swift */; };
 		D2ABC4EB23411EF900E67B49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2ABC4EA23411EF900E67B49 /* ViewController.swift */; };
@@ -14,9 +15,12 @@
 		D2ABC4F123411EF900E67B49 /* CatsAndDogs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D2ABC4EF23411EF900E67B49 /* CatsAndDogs.xcdatamodeld */; };
 		D2ABC4F323411EFA00E67B49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2ABC4F223411EFA00E67B49 /* Assets.xcassets */; };
 		D2ABC4F623411EFA00E67B49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2ABC4F423411EFA00E67B49 /* LaunchScreen.storyboard */; };
+		D2ABC4FE23411F1500E67B49 /* CatOrDogClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = D2ABC4FD23411F1500E67B49 /* CatOrDogClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8FD6AF58472BE5B33FE61ED4 /* Pods-CatsAndDogs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsAndDogs.release.xcconfig"; path = "Target Support Files/Pods-CatsAndDogs/Pods-CatsAndDogs.release.xcconfig"; sourceTree = "<group>"; };
+		BDF40E9E7DFCC22C80C24F05 /* Pods_CatsAndDogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CatsAndDogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ABC4E323411EF900E67B49 /* CatsAndDogs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatsAndDogs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2ABC4E623411EF900E67B49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2ABC4E823411EF900E67B49 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		D2ABC4F223411EFA00E67B49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2ABC4F523411EFA00E67B49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2ABC4F723411EFA00E67B49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2ABC4FD23411F1500E67B49 /* CatOrDogClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatOrDogClassifier.mlmodel; sourceTree = "<group>"; };
+		EB63A84BFCDBFE32DAFC668F /* Pods-CatsAndDogs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CatsAndDogs.debug.xcconfig"; path = "Target Support Files/Pods-CatsAndDogs/Pods-CatsAndDogs.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EEDF1883339294A2692080B /* Pods_CatsAndDogs.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BCD0FAD8FA3553165DB9BB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EB63A84BFCDBFE32DAFC668F /* Pods-CatsAndDogs.debug.xcconfig */,
+				8FD6AF58472BE5B33FE61ED4 /* Pods-CatsAndDogs.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6907A05870A2BEFDD948AD5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDF40E9E7DFCC22C80C24F05 /* Pods_CatsAndDogs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2ABC4DA23411EF900E67B49 = {
 			isa = PBXGroup;
 			children = (
 				D2ABC4E523411EF900E67B49 /* CatsAndDogs */,
 				D2ABC4E423411EF900E67B49 /* Products */,
+				04BCD0FAD8FA3553165DB9BB /* Pods */,
+				6907A05870A2BEFDD948AD5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +92,7 @@
 				D2ABC4F223411EFA00E67B49 /* Assets.xcassets */,
 				D2ABC4F423411EFA00E67B49 /* LaunchScreen.storyboard */,
 				D2ABC4F723411EFA00E67B49 /* Info.plist */,
+				D2ABC4FD23411F1500E67B49 /* CatOrDogClassifier.mlmodel */,
 				D2ABC4EF23411EF900E67B49 /* CatsAndDogs.xcdatamodeld */,
 			);
 			path = CatsAndDogs;
@@ -77,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2ABC4FA23411EFA00E67B49 /* Build configuration list for PBXNativeTarget "CatsAndDogs" */;
 			buildPhases = (
+				2861EAF4588F5AA0E89AB302 /* [CP] Check Pods Manifest.lock */,
 				D2ABC4DF23411EF900E67B49 /* Sources */,
 				D2ABC4E023411EF900E67B49 /* Frameworks */,
 				D2ABC4E123411EF900E67B49 /* Resources */,
+				F14B570864E67B207C334FAE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +166,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2861EAF4588F5AA0E89AB302 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CatsAndDogs-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F14B570864E67B207C334FAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatsAndDogs/Pods-CatsAndDogs-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CatsAndDogs/Pods-CatsAndDogs-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CatsAndDogs/Pods-CatsAndDogs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D2ABC4DF23411EF900E67B49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -143,6 +215,7 @@
 			files = (
 				D2ABC4EB23411EF900E67B49 /* ViewController.swift in Sources */,
 				D2ABC4E723411EF900E67B49 /* AppDelegate.swift in Sources */,
+				D2ABC4FE23411F1500E67B49 /* CatOrDogClassifier.mlmodel in Sources */,
 				D2ABC4E923411EF900E67B49 /* SceneDelegate.swift in Sources */,
 				D2ABC4F123411EF900E67B49 /* CatsAndDogs.xcdatamodeld in Sources */,
 			);
@@ -286,6 +359,7 @@
 		};
 		D2ABC4FB23411EFA00E67B49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB63A84BFCDBFE32DAFC668F /* Pods-CatsAndDogs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +378,7 @@
 		};
 		D2ABC4FC23411EFA00E67B49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FD6AF58472BE5B33FE61ED4 /* Pods-CatsAndDogs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
